@@ -23,7 +23,9 @@ public class WebSecurityConfig implements WebMvcConfigurer {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http
+        http    //permit all permite sem token
+                //.authenticated() permite so com token
+
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.GET, "/avaliacoes").hasAnyRole("ADMIN", "USER")
                         .requestMatchers(HttpMethod.POST, "/avaliacoes").hasRole("ADMIN")
