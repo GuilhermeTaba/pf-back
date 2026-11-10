@@ -1,3 +1,5 @@
+
+./mvnw clean package -DskipTests
 //dependências para abaixar
 Spring Web
 Spring Data JPA
