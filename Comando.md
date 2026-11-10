@@ -34,3 +34,6 @@ postgres
 docker restart pf-back
 
 docker logs <container-do-app> --tail 50
+
+docker network ls                       # lista as redes
+docker network create rede-pf           # cria a rede
