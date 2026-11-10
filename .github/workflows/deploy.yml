@@ -58,7 +58,7 @@ jobs:
 
             docker run -d \
               -p 8080:8080 \
-              -e DB_HOST=pfdb \
+              -e DB_HOST=banco \
               --network=rede-pf \
               --name ${{ env.CONTAINER_NAME }} \
               ${{ env.DOCKER_IMAGE }}:${{ github.sha }}
