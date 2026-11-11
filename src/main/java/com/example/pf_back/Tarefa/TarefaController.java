@@ -1,8 +1,7 @@
 package com.example.pf_back.Tarefa;
 
 
-import com.example.pf_back.Avaliacao.Avaliacao;
-import com.example.pf_back.Avaliacao.AvaliacaoDTO;
+
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
