@@ -38,11 +38,6 @@ public class WebSecurityConfig implements WebMvcConfigurer {
 
                 // Regras de autorização por rota (avaliadas de cima para baixo; a primeira que bater vale):
                 .authorizeHttpRequests(authorize -> authorize
-                        // GET /avaliacoes  -> precisa de token com role ADMIN ou USER
-                        .requestMatchers(HttpMethod.GET, "/tarefas").authenticated()
-                        .requestMatchers(HttpMethod.DELETE, "/tarefas").authenticated()
-                        .requestMatchers(HttpMethod.POST, "/tarefas").authenticated()
-                        // POST /avaliacoes -> precisa de token com role ADMIN
 
                         // qualquer outra rota -> só precisa de um token válido (qualquer role)
                         .anyRequest().authenticated()
